@@ -25,7 +25,8 @@
     # 'reports/teacher_card.xml',
     # 'reports/teacher_summary.xml',
     ],
-    'images': ["static/description/v1-banner.png"],
+    #'images': ["static/description/v1-banner.png"],
+    'images': ["static/description/odoo_banner_4.jpg"],
 
     'license': 'LGPL-3',
     'installable': True,
