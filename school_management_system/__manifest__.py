@@ -2,7 +2,7 @@
 
 {
     'name': 'school management system',
-    'version': '15.0.0.0',
+    'version': '15.0.0.1',
     'summary': 'School Management System',
     'description': ' School Management System',
     'category': ' School management system',
