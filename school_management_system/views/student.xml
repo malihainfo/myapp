@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="student_tree_view" model="ir.ui.view">
+        <field name="name">student.student.tree</field>
+        <field name="model">student.student</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="roll"/>
+                <field name="age" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="student_from_view" model="ir.ui.view">
+        <field name="name">student.student.form</field>
+        <field name="model">student.student</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="state" widget="statusbar" options ="{'clickable': '1'}"/>
+                </header>
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <!-- <field name="serial_num"/> -->
+                            <field name="name"/>
+                            <field name="st_class"/>
+                            <field name="a"/>
+                            <field name="b"/>
+                            <field name="is_pass"/>
+                            <field name="is_fail"/>  
+                            
+                        </group>
+                        <group>
+                            <field name="roll"/>
+                            <field name="age"/>
+                            <field name ="gender"/>
+                            <field name = "teacher_id"/>
+                        </group>
+                        
+                    </group>
+                    
+                </sheet>
+            </form>
+        </field>
+    </record>
+     <record id="student_search_view" model="ir.ui.view">
+        <field name="name">student.student.search</field>
+        <field name="model">student.student</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="roll"/>
+                <field name="age"/>
+                <field name ="gender" string="Gender"/>
+                <filter name = "filter_male" string="Male" domain = "[('gender', '=', 'male')]"/>
+                <filter name = "filter_female" string="Female" domain = "[('gender', '=', 'female')]"/>
+            </search>
+        </field>
+    </record>
+
+
+   
+    <!-- <menuitem id="patient_menu" name="BDtask New" sequence="1"/>
+    <menuitem id="patient_sub_menu" name="Patient" parent="patient_menu" action="patient_action"/> -->
+</odoo>

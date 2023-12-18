@@ -1,0 +1,60 @@
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+    <template id ="report_teacher">
+        
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.html_container">
+                    <t t-foreach="docs" t-as="o">
+                        <t t-call="web.external_layout">
+                            <div class="page">
+                                <style>
+                                    
+                                    h3{
+                                        text-align: center;
+                                        
+                                    }
+
+                                    table{
+                                        width: 100%;
+                                        border-collapse: collapse;
+                                    }
+
+                                    th, td {
+                                        padding: 4px;
+                                        text-align: left;
+                                        border-bottom: 1px solid #000;
+                                    }  
+                                    <!-- th {
+                                        background-color: #f2f2f2;
+                                    }                            -->
+                                </style>
+                                <h3>Teacher Card</h3>
+                                <br/>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th><strong>Name</strong></th>
+                                            <th><strong>Department</strong></th>
+                                            <th><strong>Age</strong></th>
+                                            <th><strong>Gender</strong></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><t t-esc="o.name"/></td> 
+                                            <td><t t-esc="o.department"/></td>
+                                            <td><t t-esc="o.age"/></td> 
+                                            <td><t t-esc="o.gender"/></td>
+                                        </tr>
+                                    </tbody>
+                                        
+                                </table>
+                            </div>
+                            
+                        </t>
+                    </t>
+                </t>
+            </t>
+    </template>
+</odoo> -->

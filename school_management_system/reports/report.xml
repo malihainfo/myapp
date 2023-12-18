@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- <report
+        id = "report_student_card"
+        string = "Student Card"
+        model = "student.student"
+        report_type = "qweb-pdf"
+        name = "Bdtask_school_management_system.report_student"
+        file = "Bdtask_school_management_system.report_student"/> -->
+    
+    <report
+        id = "report_student_card"
+        string = "Student Card"
+        model = "student.student"
+        report_type = "qweb-html"
+        name = "school_management_system.report_student"/>
+
+    <record id="report_student_card_summary" model="ir.actions.report">
+            <field name="name">Student Card Summary</field>
+            <field name="model">student.student</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">school_management_system.report_student_summary</field>
+            <field name="report_file">school_management_system.report_student_summary</field>
+            <field name="binding_model_id" ref="model_student_student"/>
+            <field name="binding_type">report</field>
+    </record>
+
+</odoo>

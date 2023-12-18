@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="management_tree_view" model="ir.ui.view">
+        <field name="name">management.management.tree</field>
+        <field name="model">management.management</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                
+            </tree>
+        </field>
+    </record>
+
+    <record id="management_from_view" model="ir.ui.view">
+        <field name="name">management.management.form</field>
+        <field name="model">management.management</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <!-- <field name = "management_id"/> -->
+                        <!-- <field name = "teacher_id"/> -->
+                    </group>
+                    <notebook>
+                        <page string = "Teacher">
+                            <field name = "teacher_id">
+                                <tree string = "Teacher">
+                                    <field name="name"/>
+                                    <field name="department"/>
+                                    <field name="age"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string = "Student">
+                            <field name = "student_id">
+                                <tree string = "Student">
+                                    <field name="name"/>
+                                    <field name="st_class"/>
+                                    <field name="roll"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="management_action" model="ir.actions.act_window">
+        <field name="name">School Management</field>
+        <field name="res_model">management.management</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record id="teacher_action" model="ir.actions.act_window">
+        <field name="name">Teacher</field>
+        <field name="res_model">teacher.teacher</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+     <record id="student_action" model="ir.actions.act_window">
+        <field name="name">Student</field>
+        <field name="res_model">student.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="management_menu" name="BDtask School"/>
+    <menuitem id ="management1_menu" name="Admin" parent="management_menu" action="management_action"/>
+    <menuitem id="teacher_menu" name="Teacher" parent="management_menu" action="teacher_action"/>
+    <menuitem id="student_menu" name="Student" parent="management_menu" action="student_action"/>
+ 
+    
+</odoo>
+
+ 
