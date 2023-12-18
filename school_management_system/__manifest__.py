@@ -2,7 +2,7 @@
 
 {
     'name': 'school management system',
-    'version': '15.0.0.1',
+    'version': '15.0.0.2,
     'summary': 'School Management System',
     'description': ' School Management System',
     'category': ' School management system',
@@ -26,7 +26,7 @@
     # 'reports/teacher_summary.xml',
     ],
     #'images': ["static/description/v1-banner.png"],
-    'images': ["static/description/odoo_banner_4.jpg"],
+    'images': ["static/description/banner.png"],
 
     'license': 'LGPL-3',
     'installable': True,
