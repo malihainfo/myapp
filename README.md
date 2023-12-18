@@ -1,0 +1,2 @@
+# myapp
+my odoo app 
