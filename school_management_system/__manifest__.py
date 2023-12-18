@@ -25,7 +25,8 @@
     # 'reports/teacher_card.xml',
     # 'reports/teacher_summary.xml',
     ],
-    
+    'images': ["static/description/v1-banner.png"],
+
     'license': 'LGPL-3',
     'installable': True,
     'auto_install': False,
