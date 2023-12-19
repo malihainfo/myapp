@@ -2,7 +2,7 @@
 
 {
     'name': 'school management system',
-    'version': '15.0.0.2,
+    'version': '15.0.0.3,
     'summary': 'School Management System',
     'description': ' School Management System',
     'category': ' School management system',
@@ -26,7 +26,7 @@
     # 'reports/teacher_summary.xml',
     ],
     #'images': ["static/description/v1-banner.png"],
-    'images': ["static/description/banner.png"],
+    'images': ["static/description/images.png"],
 
     'license': 'LGPL-3',
     'installable': True,
